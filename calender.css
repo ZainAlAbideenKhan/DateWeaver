@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: monospace, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-size: 15px;
+}
+
+main {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.input-container {
+  height: 12%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-evenly;
+}
+.input-container input {
+  font-family: 15px;
+  border: solid 1px #000;
+  border-radius: 3px;
+  outline: none;
+  padding: 3px 5px;
+}
+.input-container button {
+  font-size: 1em;
+  padding: 1px 5px;
+}
+
+th {
+  background: #03a9f4;
+  color: #efefef;
+  height: 10vh;
+  width: 10vh;
+}
+
+tr {
+  opacity: 1;
+  transition: opacity ease 1000ms;
+}
+
+td {
+  height: 10vh;
+  width: 10vh;
+  background: #e5e5e5;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1em;
+  transition: background ease 1s;
+}
+td span {
+  opacity: 0;
+  transition: opacity ease 1s;
+}
+td.void-cell {
+  background-color: #c0c0c0;
+}
+td span.fill-span {
+  opacity: 1;
+}
+
+.messageBox-container {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0 0 0 / 40%);
+  transition: opacity cubic-bezier(0.25, 1, 0.5, 1) 0.5s;
+}
+.messageBox {
+  width: 40vw;
+  height: 40vh;
+  font-family: monospace, sans-serif;
+  font-size: 1em;
+}
+.messageBox .title {
+  height: 10%;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.messageBox.message .title {
+  background-color: #009688;
+}
+.messageBox.error .title {
+  background-color: #f44336;
+}
+.messageBox.warning .title {
+  background-color: #ffc107;
+  color: #000;
+}
+.messageBox .body {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 90%;
+  width: 100%;
+  color: #000;
+  background-color: #fff;
+}
+.messageBox .message {
+  width: 80%;
+  text-align: center;
+}
+#messageBox-ok-btn {
+  position: relative;
+  bottom: -27%;
+  padding: 5px 30px;
+}
+
+.spoof-toggle-container {
+  position: absolute;
+  bottom: 2vw;
+  left: 2vw;
+  opacity: 0.4;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 12px;
+  }
+  th,
+  td {
+    width: 10vw;
+    height: 10vw;
+  }
+  .messageBox {
+    width: 80vw;
+    height: 30vh;
+  }
+}
+
+.hidden {
+  opacity: 0;
+}

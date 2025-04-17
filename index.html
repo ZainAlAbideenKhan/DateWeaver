@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calender</title>
+    <link rel="stylesheet" href="./calender.css" />
+    <link rel="icon" href="./logo.png" type="image/png" />
+  </head>
+  <body>
+    <div class="messageBox-container hidden">
+      <div class="messageBox">
+        <div class="title"></div>
+        <div class="body">
+          <span class="message"></span>
+          <button id="messageBox-ok-btn">OK</button>
+        </div>
+      </div>
+    </div>
+    <main>
+      <div class="input-container">
+        <span class="label">Enter Month and Year</span>
+        <input type="text" placeholder="MM/YYYY" />
+        <button class="genCal-btn">Generate Calender</button>
+      </div>
+      <div class="calender-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Sun</th>
+              <th>Mon</th>
+              <th>Tue</th>
+              <th>Wed</th>
+              <th>Thu</th>
+              <th>Fri</th>
+              <th>Sat</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+            </tr>
+            <tr>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+            </tr>
+            <tr>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+            </tr>
+            <tr>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+            </tr>
+            <tr>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+            </tr>
+            <tr style="opacity: 0">
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <div class="spoof-toggle-container">
+      <label for="spoof-check">Spoof</label>
+      <input type="checkbox" id="spoof-check" checked />
+    </div>
+  </body>
+  <script src="./calender.js"></script>
+</html>
