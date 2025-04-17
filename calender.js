@@ -59,7 +59,7 @@ function setCalender(raw_date = null) {
     new MessageBox(
       "message",
       "Message from Developer",
-      "🎉 YAAY! You've just stepped into of my <br>🌸✨ <strong>Birth Month & Year</strong> 🥳🥳🥳 <br>"
+      "🎉 YAAY! You've just stepped into my <br>🌸✨ <strong>Birth Month & Year</strong> 🥳🥳🥳 <br>"
     );
   }
   if (inp_month == 9 && inp_year == 2003) {
